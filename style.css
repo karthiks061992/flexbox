@@ -1,0 +1,61 @@
+html{
+    scroll-behavior: smooth;
+}
+.parent{
+    height: 100vh;
+    border: black;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+    /*flex-direction: column; used to change the direction of flex
+    
+    justify-content: center;
+        justify-content: flex-end;
+        justify-content:flex-start;
+            justify-content: space-evenly very important;
+            very important align-items works on the child elements
+              align-items: center;
+               align-items: flex-start;
+                flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+       flex-wrap: wrap;//used to shift elements to the next line if the space is really small
+        flex-wrap: wrap;
+    align-content: flex-start;//run in combination and check
+     flex-flow: column wrap;this is a combination of direction of align and enable wrap
+   
+   
+ */
+   
+}
+.child1{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    order: 1;
+    /*more higher the order the leftmost its placed
+    flex-grow: 1;//takes all the empty space available
+    if flex-grow:1 is present in all the child then the whole page space is split equally
+    
+    instead of messing with flex-grow shrink we can use flex which combines everything */
+    flex:1 1 300px
+  
+    
+    
+}
+.child2{
+    height: 200px;
+    width: 200px;
+    background-color: maroon;
+    flex:1 1 300px;
+    /*every element has a baseline width of 300px if flex wrap is given in parent then it shifts to the new line*/
+    
+}
+.child3{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    flex:1 1 300px;
+    
+   
+}
